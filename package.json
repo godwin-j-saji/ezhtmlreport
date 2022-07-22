@@ -1,11 +1,20 @@
 {
   "name": "ezhtmlreport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is created to minimize the overhead for testers to print or creare custom html reports",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "godwin j saji",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godwin-j-saji/ezhtmlreport.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/godwin-j-saji/ezhtmlreport/issues"
+  },
+  "homepage": "https://github.com/godwin-j-saji/ezhtmlreport#readme"
 }
