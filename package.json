@@ -1,0 +1,11 @@
+{
+  "name": "ezhtmlreport",
+  "version": "1.0.0",
+  "description": "This is created to minimize the overhead for testers to print or creare custom html reports",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "godwin j saji",
+  "license": "ISC"
+}
