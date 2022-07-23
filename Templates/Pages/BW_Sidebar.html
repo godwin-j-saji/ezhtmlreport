@@ -71,6 +71,11 @@ margin: 0;
     white-space: nowrap;
     background: var(--cui-sidebar-nav-link-bg,transparent);
     transition: background .15s ease,color .15s ease;
+    padding-left: 3px;
+}
+.sidebar-option img{
+    height: 30px;
+    margin-right:5px;
 }
 .report-body{
     padding-top: 80px;
@@ -88,18 +93,18 @@ margin: 0;
 <body>
 <div class="container">
 <div class="sidebar">
-<div class="Logo">
-    <img src="./EZHtmlReport-Helpers/images/logo.jpg" alt="">
-</div>
-<div class="sidebar-container">
-    <div class="sidebar-option">
-        <a href="">OVERVIEW</a>
+    <div class="Logo">
+        <img src="./EZHtmlReport-Helpers/images/logo.jpg" alt="">
     </div>
-    <div class="sidebar-option">
-        <a href="">REPORT</a>
+    <div class="sidebar-container">
+        <div class="sidebar-option">
+            <a href=""><img src="./EZHtmlReport-Helpers/images/home.png" alt=""> OVERVIEW</a>
+        </div>
+        <div class="sidebar-option">
+            <a href=""><img src="./EZHtmlReport-Helpers/images/report.png" alt=""> REPORT</a>
+        </div>
     </div>
-</div>
-</div>
+    </div>
 <div class="report-wrapper">
 <h3 class="case-header">
     {HEADER_NAME}

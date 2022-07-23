@@ -4,6 +4,7 @@ function generateEZHtmlReport(HeaderName,ReportContent,portableReportLocation){
     var htmlPageTemplate=fs.readFileSync(path.resolve(__dirname, './Templates/Pages/BW_Sidebar.html')).toString('utf-8');
     htmlPageTemplate=htmlPageTemplate.replace('{HEADER_NAME}',HeaderName);
     htmlPageTemplate=htmlPageTemplate.replace('{REPORT_CONTENT}',ReportContent);
+    console.log("EZHtmlReport||Creating portable report in> "+path.resolve(portableReportLocation))
     makedirRecursiveSync(portableReportLocation+'EZHtmlReport-Helpers/');
     copyRecursiveSync(path.resolve(__dirname, './EZHtmlReport-Helpers'),portableReportLocation+'EZHtmlReport-Helpers/');
     fs.writeFileSync(portableReportLocation+"index.html",htmlPageTemplate);
@@ -32,11 +33,11 @@ var copyRecursiveSync = function(src, dest) {
     var destEsists=fs.existsSync(dest);
     var stats = fs.statSync(src);
     var isDirectory = stats.isDirectory();
-   console.log("isExist="+destEsists+"::isDir="+stats.isDirectory()+"::src="+src+"::dest="+dest) 
+    //console.log("isExist="+destEsists+"::isDir="+stats.isDirectory()+"::src="+src+"::dest="+dest) 
     
    if (isDirectory) {
     if(!destEsists){
-      console.log("creeating Dir..."+dest)
+      //console.log("creeating Dir..."+dest)
         fs.mkdirSync(dest);
       }
       fs.readdirSync(src).forEach(function(childItemName) {
